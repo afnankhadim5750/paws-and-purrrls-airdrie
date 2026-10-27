@@ -39,7 +39,7 @@ header.site{position:sticky;top:0;z-index:50;background:var(--green-deep);color:
 .menu-btn{display:none;margin-left:auto;background:var(--honey);border:0;border-radius:8px;padding:10px 14px;font-family:var(--font-d);font-weight:700;cursor:pointer}
 /* Hero bento */
 .hero{padding:28px 0 56px}
-.bento{display:grid;grid-template-columns:1.35fr .8fr .8fr;grid-template-rows:300px 210px;gap:14px}
+.bento{display:grid;grid-template-columns:1.35fr .8fr .8fr;grid-template-rows:auto 210px;gap:14px}
 .bento figure{margin:0;position:relative;border-radius:var(--radius);overflow:hidden}
 .bento img{width:100%;height:100%;object-fit:cover}
 .bento .big{grid-row:span 2}
@@ -116,7 +116,7 @@ footer a{color:#fff}
 .reveal.in{opacity:1;transform:none}
 @media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none}}
 @media(max-width:900px){
-  .bento{grid-template-columns:1fr 1fr;grid-template-rows:280px 200px 200px}
+  .bento{grid-template-columns:1fr 1fr;grid-template-rows:280px auto 200px}
   .bento .big{grid-column:span 2;grid-row:span 1}
   .about-grid,.band .wrap,.visit-grid{grid-template-columns:1fr}
   .tiles,.quotes{grid-template-columns:1fr 1fr}
